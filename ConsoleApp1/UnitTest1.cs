@@ -25,7 +25,7 @@ namespace NET
             parameters.LoadParameters(40, 50, 1, 0, 10);
 
             board = new Board(parameters);
-            board.LoadFromFile(".\\BoardsExamples\\Example1.txt");
+            board.LoadFromFile(".//BoardsExamples//Example1.txt");
             Assert.IsTrue(board.GetAliveCells() == 28);
         }
         [TestMethod]
@@ -35,7 +35,7 @@ namespace NET
             parameters.LoadParameters(40, 50, 1, 0, 10);
 
             board = new Board(parameters);
-            board.LoadFromFile(".\\BoardsExamples\\Example1.txt");
+            board.LoadFromFile(".//BoardsExamples//Example1.txt");
             Assert.IsTrue(board.CountBlocks() == 1);
         }
         [TestMethod]
@@ -45,7 +45,7 @@ namespace NET
             parameters.LoadParameters(40, 50, 1, 0, 10);
 
             board = new Board(parameters);
-            board.LoadFromFile(".\\BoardsExamples\\Example1.txt");
+            board.LoadFromFile(".//BoardsExamples//Example1.txt");
             Assert.IsTrue(board.CountBoat() == 0);
         }
         [TestMethod]
@@ -55,7 +55,7 @@ namespace NET
             parameters.LoadParameters(40, 50, 1, 0, 10);
 
             board = new Board(parameters);
-            board.LoadFromFile(".\\BoardsExamples\\Example1.txt");
+            board.LoadFromFile(".//BoardsExamples//Example1.txt");
             Assert.IsTrue(board.CountHives() == 0);
         }
 
