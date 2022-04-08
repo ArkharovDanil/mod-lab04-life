@@ -15,7 +15,7 @@ namespace NET
             parameters.LoadParameters(40, 50, 1, 0, 10);
 
             board = new Board(parameters);
-            board.LoadFromFile("//BoardsExamples//Example1.txt");
+            board.LoadFromFile(".//BoardsExamples//Example1.txt");
             Assert.IsTrue(board.CountBox() == 0);
         }
         [TestMethod]
